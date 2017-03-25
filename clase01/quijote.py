@@ -11,6 +11,8 @@ for letra in contenido.lower():
             letras[letra] = 0
         letras[letra] += 1
 
-print(sorted(letras.items(),
-             reverse=True,
-             key=lambda x: x[1]))
+
+def primer_elemento(tupla):
+    return tupla[1]
+
+print(sorted(letras.items(), reverse=True, key=primer_elemento))
