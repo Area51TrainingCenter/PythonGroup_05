@@ -1,0 +1,18 @@
+<h1>Lista de tareas</h1>
+
+<p>Escribe una tareas y presiona enviar para agregarla</p>
+
+<form action="" method="post">
+    Tarea: <input type="text" name="tarea">
+    <input type="submit">
+</form>
+
+{# creo que era así #}
+<!-- hola, soy un comentario -->
+
+<p>Tareas enviadas</p>
+<ul>
+    {% for tarea in tareas %}
+        <li>{{ tarea }}</li>
+    {% endfor %}
+</ul>

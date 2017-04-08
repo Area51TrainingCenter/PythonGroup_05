@@ -1,0 +1,13 @@
+<img src="/static/gatito.png" height="100">
+
+<h1>Saludador:</h1>
+<p>Escribe tu nombre y presiona enviar otra {{ otra }}</p>
+
+<form action="" method="post">
+    Nombre: <input type="text" name="nombre">
+    <input type="submit">
+</form>
+
+{% if nombre %}
+    <h3>Hola {{ nombre }}!</h3>
+{% endif %}

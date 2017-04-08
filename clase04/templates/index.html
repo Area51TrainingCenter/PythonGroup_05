@@ -1,0 +1,14 @@
+<h1>Hola {{ nombre }} {{ apellido }}</h1>
+
+<p>Miren mis números!:</p>
+
+<p>
+    {% if numeros %}
+        {% for numero in numeros %}
+            Numero {{ numero }}
+            <br>
+        {% endfor %}
+    {% else %}
+        No hay números :'(
+    {% endif %}
+</p>
