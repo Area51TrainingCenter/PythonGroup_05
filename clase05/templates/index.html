@@ -1,0 +1,16 @@
+<h1>Listado de tareas</h1>
+
+<form action="" method="post">
+    Tarea: <input type="text" name="tarea">
+    <input type="submit" value="Enviar!!!!">
+</form>
+
+<ul>
+    {% for tarea in tareas %}
+        <li>
+            {{ tarea.texto }}
+            <a href="/eliminar/{{ tarea.id }}">(eliminar)</a>
+            <a href="/editar/{{ tarea.id }}">(editar)</a>
+        </li>
+    {% endfor %}
+</ul>

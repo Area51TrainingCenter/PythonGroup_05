@@ -1,0 +1,12 @@
+{% load static %}
+<img src="{% static 'logo.png' %}" width="80">
+
+<h1>Hola {{ nombre }}!</h1>
+
+<h2>Disfruta de todas las actividades que tenemos para ti:</h2>
+
+<ul>
+    {% for actividad in actividades %}
+        <li>{{ actividad.titulo }}</li>
+    {% endfor %}
+</ul>
