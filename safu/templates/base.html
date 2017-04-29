@@ -1,0 +1,22 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SAFU v0.0.0.0.0.1</title>
+</head>
+<body>
+<img src="{% static 'logo.png' %}" width="80">
+
+<h1>SAFU v0.0.0.0.0.1</h1>
+<h3>Navegación:</h3>
+<ul>
+    <li><a href="{% url 'home' %}">Home</a></li>
+    <li><a href="{% url 'actividades' %}">Actividades</a></li>
+</ul>
+
+{% block contenido %}Contenido por defecto{% endblock %}
+
+<h4>&copy; 2017 - Area51</h4>
+</body>
+</html>
